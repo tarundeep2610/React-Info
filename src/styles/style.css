@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&display=swap');
+
+:root{
+    --react-color: #61DAFB;
+}
+
+p{
+    font-size: 1rem;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #282D35;
+    padding: 0 20rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #21222A;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
+    z-index: 0;
+}
+
+.nav.light{
+    background: white;
+}
+
+.nav.light p{
+    color: black;
+}
+
+.nav.light .theme-btn{
+    background-color: black;
+}
+
+.nav.light .slider{
+    background-color: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 29px;
+    margin: 0 .5rem 0 1rem;
+}
+
+.logo h2{
+    color: var(--react-color);
+    font-size: 1.5rem;
+}
+
+.blur{
+    color: #918e9b81 !important;
+}
+
+.nav p{
+    margin: 2rem 1rem;
+    color: white;
+}
+
+.theme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-btn{
+    width: 3rem;
+    background-color: white;
+    height: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.slider{
+    height: 1.4rem;
+    width: 1.4rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: .1rem;
+    transition: slide linear 1s;
+}
+
+.left{
+    left: .1rem;
+}
+
+.right{
+    right: .1rem;
+}
+
+.main-section{
+    width: 100%;
+    height: 100%;
+    padding: 4rem 1rem 1rem 1rem;
+    color: white;
+    background-image: url("../assets/Group.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 70% !important;
+    background-size: 9rem !important;
+}
+
+.main-section.light {
+    background: white;
+    color: black;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-section h1{
+    margin: 0;
+}
+
+.main-section ul{
+    margin: 3rem 0 0 .5rem;
+}
+
+.main-section ul li{
+    line-height: 2rem;
+}
+
+.main-section ul li::marker{
+    font-size: 1.5rem;
+    color: var(--react-color);
+}
+
+@media(max-width:750px){
+    body{
+        padding: 0;
+    }
+}
